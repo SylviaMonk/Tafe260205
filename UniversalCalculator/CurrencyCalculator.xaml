@@ -9,6 +9,48 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+		<StackPanel Width="1200" Height="1200" Orientation="Vertical" VerticalAlignment="Top">
+			<StackPanel x:Name="Header" Height="100" Padding="20">
+				<TextBlock Text="Currency Conversion Calculator" Height="60" FontSize="42" FontWeight="Bold"></TextBlock>
+			</StackPanel>
+			
+			<StackPanel x:Name="Body" Orientation="Horizontal" Padding="10" Margin="10">
+				<StackPanel x:Name="Amount" Width="300" Orientation="Vertical"  Padding="10" Margin="10">
+					<StackPanel>
+						<TextBlock Text="Amount $" FontSize="30"></TextBlock>
+						<TextBox x:Name="inputBox" PlaceholderText="Enter Value Here" Width="280"></TextBox>
+					</StackPanel>
+					<StackPanel Height="400" Spacing="20">
+						<TextBlock x:Name="fromTextBlock" FontSize="20"></TextBlock>
+						<TextBlock x:Name="EqualsTextBlock" FontWeight="Bold" FontSize="20"></TextBlock>
+						<TextBlock x:Name="Fact1TextBlock"></TextBlock>
+						<TextBlock x:Name="Fact2TextBlock"></TextBlock>
+					</StackPanel>
+				</StackPanel>
+				<StackPanel x:Name="From" Width="300" Padding="10" Margin="10">
+					<TextBlock Text="From" FontSize="30"></TextBlock>
+					<ComboBox x:Name="FromComboBox" SelectedIndex="0" Width="280">
+						<x:String>USD - US Dollar</x:String>
+						<x:String>EUR - Euro</x:String>
+						<x:String>GBP - British Pound</x:String>
+						<x:String>INR - Indian Rupee</x:String>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel x:Name="To" Width="300" Padding="10" Margin="10">
+					<TextBlock Text="To" FontSize="30"></TextBlock>
+					<ComboBox x:Name="ToComboBox" SelectedIndex="0" Width="280">
+						<x:String>USD - US Dollar</x:String>
+						<x:String>EUR - Euro</x:String>
+						<x:String>GBP - British Pound</x:String>
+						<x:String>INR - Indian Rupee</x:String>
+					</ComboBox>
+				</StackPanel>
+				
+			</StackPanel>
+			<StackPanel x:Name="Buttons" Orientation="Vertical" HorizontalAlignment="Center">
+				<Button x:Name="CalculateButton" Width="300" Height="60" Margin="10" Click="CalculateButton_Click">Calculate</Button>
+				<Button x:Name="ExitButton" Width="300" Height="60" Margin="10" Click="ExitButton_Click">Exit</Button>
+			</StackPanel>
+		</StackPanel>
     </Grid>
 </Page>
