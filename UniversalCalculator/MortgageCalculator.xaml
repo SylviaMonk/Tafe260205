@@ -8,21 +8,20 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-	<Grid>
+	<Grid >
 
 		
-		<Border Width="700
-				"
-                Background="White"
-                CornerRadius="10"
+		<Border Width="700"
+                Background="AliceBlue"
+                CornerRadius="1"
                 Padding="30"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 BorderBrush="Gray"
                 BorderThickness="1">
 
-			<!-- Inner Grid holds the labels + textboxes in 2 columns -->
-			<Grid>
+			<!-- Inner Grid holds the labels + textboxes  -->
+			<Grid Background="AliceBlue" >
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="Auto"/>
 					<ColumnDefinition Width="*"/>
@@ -49,39 +48,39 @@
 				<!-- Principal -->
 				<TextBlock Grid.Row="1" Grid.Column="0" Text="Principal borrowed: $"
                            Foreground="Black" HorizontalAlignment="Right"
-                           VerticalAlignment="Center" Margin="0,6,10,6"/>
-				<TextBox Grid.Row="1" Grid.Column="1" x:Name="txtPrincipal" Margin="0,6"/>
+                           VerticalAlignment="Center" Margin="0,6,10,0"/>
+				<TextBox Grid.Row="1" Grid.Column="1" x:Name="txtPrincipal" Margin="0,6" />
 
 				<!-- Years -->
 				<TextBlock Grid.Row="2" Grid.Column="0" Text="Years:"
                            Foreground="Black" HorizontalAlignment="Right"
                            VerticalAlignment="Center" Margin="0,6,10,6"/>
-				<TextBox Grid.Row="2" Grid.Column="1" x:Name="txtYears" Margin="0,6"/>
+				<TextBox Grid.Row="2" Grid.Column="1" x:Name="txtYears" Margin="0,6" />
 
 				<!-- Months -->
 				<TextBlock Grid.Row="3" Grid.Column="0" Text="Months:"
                            Foreground="Black" HorizontalAlignment="Right"
                            VerticalAlignment="Center" Margin="0,6,10,6"/>
-				<TextBox Grid.Row="3" Grid.Column="1" x:Name="txtMonths" Margin="0,6"/>
+				<TextBox Grid.Row="3" Grid.Column="1" x:Name="txtMonths" Margin="0,6" />
 
 				<!-- Annual Interest Rate -->
 				<TextBlock Grid.Row="4" Grid.Column="0" Text="Annual Interest Rate: %"
                            Foreground="Black" HorizontalAlignment="Right"
                            VerticalAlignment="Center" Margin="0,6,10,6"/>
-				<TextBox Grid.Row="4" Grid.Column="1" x:Name="txtAnnualRate" Margin="0,6"/>
+				<TextBox Grid.Row="4" Grid.Column="1" x:Name="txtAnnualRate" Margin="0,6" />
 
-				<!-- Monthly Interest Rate (output) -->
+				<!-- Monthly Interest Rate -->
 				<TextBlock Grid.Row="5" Grid.Column="0" Text="Monthly Interest Rate:"
                            Foreground="Black" HorizontalAlignment="Right"
                            VerticalAlignment="Center" Margin="0,6,10,6"/>
 				<TextBox Grid.Row="5" Grid.Column="1" x:Name="txtMonthlyRate" 
                          Margin="0,6" IsReadOnly="True"/>
 
-				<!-- Monthly Repayment (output) -->
+				<!-- Monthly Repayment -->
 				<TextBlock Grid.Row="6" Grid.Column="0" Text="Monthly Repayment:"
                            Foreground="Black" HorizontalAlignment="Right"
                            VerticalAlignment="Center" Margin="0,6,10,6"/>
-				<TextBox Grid.Row="6" Grid.Column="1" x:Name="txtRepayment"
+				<TextBox Grid.Row="6" Grid.Column="1" x:Name="txtRepayment" 
                          Margin="0,6" IsReadOnly="True"/>
 
 				<!-- Buttons -->
@@ -90,9 +89,9 @@
                             HorizontalAlignment="Right"
                             Margin="0,20,0,0" Spacing="10">
 					<Button x:Name="btnCalculate" Content="Calculate"
-                            Padding="20,8" Click="BtnCalculate_Click" Background="DarkGray" FontWeight="Bold" Foreground="Black"	/>
+                            Padding="20,8" Click="BtnCalculate_Click" Background="Gray" FontWeight="Bold" Foreground="Black"	/>
 					<Button x:Name="btnExit" Content="Exit"
-                            Padding="20,8" Click="BtnExit_Click" Background="DarkGray" FontWeight="Bold" Foreground="Black"/>
+                            Padding="20,8" Click="BtnExit_Click" Background="Gray" FontWeight="Bold" Foreground="Black"/>
 				</StackPanel>
 
 			</Grid>
