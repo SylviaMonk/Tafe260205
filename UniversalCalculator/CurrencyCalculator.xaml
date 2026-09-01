@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-		<StackPanel Width="1200" Height="1200" Orientation="Vertical" VerticalAlignment="Top">
+		<StackPanel Width="1200" Height="1200" Orientation="Vertical" Background="AliceBlue" VerticalAlignment="Top">
 			<StackPanel x:Name="Header" Height="100" Padding="20">
 				<TextBlock Text="Currency Conversion Calculator" Height="60" FontSize="42" FontWeight="Bold"></TextBlock>
 			</StackPanel>
