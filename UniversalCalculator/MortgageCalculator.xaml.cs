@@ -105,7 +105,7 @@ namespace Calculator
 		      // Exit button
 		private void BtnExit_Click(object sender, RoutedEventArgs e)
 		{
-			Application.Current.Exit();
+			this.Frame.Navigate(typeof(MainMenu));
 		}
 
 
