@@ -51,5 +51,15 @@
 			Exit
 		</Button>
 
+		<TextBlock Grid.Row="4"
+           Grid.Column="0"
+           Grid.ColumnSpan="2"
+           Text="Trip calculator C# code will be developed later."
+           HorizontalAlignment="Center"
+           Margin="10,20,10,10"
+           TextWrapping="Wrap"/>
+	
+
+
 	</Grid>
 </Page>
